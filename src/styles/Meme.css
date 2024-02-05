@@ -1,0 +1,50 @@
+@import "../styles/_reset.css";
+
+.main-content-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 840px;
+  width: 100%;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 380px;
+}
+
+.submit-button {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px;
+}
