@@ -1,0 +1,29 @@
+@import "../styles/_reset.css";
+
+.header {
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header-title-container {
+  align-items: center;
+  display: flex;
+}
+
+.header-image {
+  margin-right: 10px;
+  width: 36px;
+}
+
+.header-title {
+  font-size: 20px;
+}
+
+.project-description {
+  font-size: 16px;
+  font-weight: 400;
+}
