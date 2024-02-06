@@ -47,3 +47,14 @@
   font-size: 18px;
   padding: 20px;
 }
+
+.meme-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.meme-image {
+  max-width: 100%;
+}
