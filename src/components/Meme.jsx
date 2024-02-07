@@ -3,16 +3,31 @@ import { useState } from "react";
 import memesData from "../memesData.js";
 
 const Meme = () => {
-  const [memeImage, setMemeImage] = useState("");
-  const [memeName, setMemeName] = useState("");
+  // const [memeImage, setMemeImage] = useState("");
+  // const [memeName, setMemeName] = useState("");
+
+  const [meme, setMeme] = useState({
+    topText: "",
+    bottomText: "",
+    randomImage: "http://i.imgflip.com/1bij.jpg",
+    imageName: "One Does Not Simply",
+  });
+
+  const [allMemeImages, setAllMemeImages] = useState(memesData);
 
   const getMemeImage = (e) => {
     e.preventDefault();
 
     const memesArray = memesData.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    setMemeImage(memesArray[randomNumber].url);
-    setMemeName(memesArray[randomNumber].name);
+    const url = memesArray[randomNumber].url;
+    const name = memesArray[randomNumber].name;
+
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImage: url,
+      imageName: name,
+    }));
   };
 
   return (
@@ -39,9 +54,13 @@ const Meme = () => {
             Get a new meme image
           </button>
         </form>
-        {memeImage && (
+        {meme.randomImage && (
           <div className="meme-image-container">
-            <img src={memeImage} alt={memeName} className="meme-image" />
+            <img
+              src={meme.randomImage}
+              alt={meme.imageName}
+              className="meme-image"
+            />
           </div>
         )}
       </main>
