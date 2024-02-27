@@ -8,7 +8,7 @@ const Header = () => {
         <img src={logo} alt="" className="header-image" />
         <h1 className="header-title">Meme Generator</h1>
       </div>
-      <h2 className="project-description">React Course - Project 3</h2>
+      <h2 className="project-description">React - Project 3</h2>
     </header>
   );
 };
