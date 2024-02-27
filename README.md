@@ -15,4 +15,4 @@ These are some of the topics I learned in this course and was able to apply in t
 - Forms
 - Side effects
 
-Follow this link to see the project [https://candela-olha-react-meme-generator.netlify.app/](https://candela-olha-react-meme-generator.netlify.app/) 👉
+Follow this link to see the project 👉 [https://candela-olha-react-meme-generator.netlify.app/](https://candela-olha-react-meme-generator.netlify.app/)
